@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.deanishe.alfred-appscripts</string>
+	<string>de.xdevcloud.alfred-appscripts</string>
 	<key>connections</key>
 	<dict>
 		<key>0DE16F6E-6B2E-4FD7-9146-87C526800384</key>
@@ -116,7 +116,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Dean Jackson</string>
+	<string>Thomas Harr</string>
 	<key>description</key>
 	<string>Show Scripts for the Active Application</string>
 	<key>disabled</key>
@@ -507,8 +507,8 @@ echo "$name"</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>3.2.0</string>
+	<string>4.0.0</string>
 	<key>webaddress</key>
-	<string>www.deanishe.net</string>
+	<string>https://github.com/harrtho/alfred-appscripts</string>
 </dict>
 </plist>
