@@ -59,22 +59,21 @@ Please use [GitHub issues][gh-issues] to report bugs or request features. Altern
 Licence, thanks
 ---------------
 
-The workflow code and the bundled [Alfred-Workflow][alfred-workflow] and [docopt][docopt] libraries are all licensed under the [MIT Licence][mit-licence].
+The workflow code and the bundled [Alfred-PyWorkflow][alfred-pyworkflow] and [docopt][docopt] libraries are all licensed under the [MIT Licence][mit-licence].
 
 The workflow icon was created by [Jono Hunt][jono].
 
 The other icons are from [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy], and released under the [SIL OFL 1.1 licence][sil-licence].
 
-
-[alfred-workflow]: https://github.com/deanishe/alfred-workflow
+[alfred-pyworkflow]: https://github.com/harrtho/alfred-pyworkflow
 [cc-licence]: http://creativecommons.org/licenses/by-nc/3.0/
 [dave-gandy]: https://twitter.com/davegandy
-[demo]: https://raw.githubusercontent.com/deanishe/alfred-appscripts/master/demo.gif "Animated demonstration of AppScripts"
+[demo]: https://raw.githubusercontent.com/harrtho/alfred-appscripts/master/demo.gif "Animated demonstration of AppScripts"
 [docopt]: https://github.com/docopt/docopt
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [forum-thread]: http://www.alfredforum.com/topic/4218-appscripts
-[gh-issues]: https://github.com/deanishe/alfred-appscripts/issues
-[gh-releases]: https://github.com/deanishe/alfred-appscripts/releases
+[gh-issues]: https://github.com/harrtho/alfred-appscripts/issues
+[gh-releases]: https://github.com/harrtho/alfred-appscripts/releases
 [mit-licence]: http://opensource.org/licenses/MIT
 [packal]: http://www.packal.org/workflow/appscripts
 [sil-licence]: http://scripts.sil.org/OFL

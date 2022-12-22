@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright (c) 2015 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2015 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -10,7 +11,6 @@
 
 """Run all scripts 10 times."""
 
-from __future__ import print_function, unicode_literals, absolute_import
 
 import os
 import subprocess
@@ -33,7 +33,7 @@ def main():
     for script in iter_scripts():
 
         name = os.path.splitext(os.path.basename(script))[0]
-        cmd = [b'/usr/bin/python', script]
+        cmd = ['/usr/local/bin/python3', script]
         times = []
         print(name)
         for i in range(ITERATIONS):

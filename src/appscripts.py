@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright (c) 2014 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2015 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -28,28 +29,25 @@ Options:
 
 """
 
-from __future__ import print_function, unicode_literals, absolute_import
 
-from collections import namedtuple
-from contextlib import contextmanager
 import os
 import shutil
 import subprocess
+from collections import namedtuple
+from contextlib import contextmanager
 from time import time
 
 from docopt import docopt
-
-from workflow import Workflow3, ICON_WARNING, ICON_INFO, ICON_ERROR
+from workflow import ICON_ERROR, ICON_INFO, ICON_WARNING, Workflow
 from workflow.util import run_command
-
 
 log = None
 
-HELP_URL = ('https://github.com/deanishe/alfred-appscripts'
+HELP_URL = ('https://github.com/harrtho/alfred-appscripts'
             '#alfred-appscripts-workflow')
 
 UPDATE_SETTINGS = {
-    'github_slug': 'deanishe/alfred-appscripts'
+    'github_slug': 'harrtho/alfred-appscripts'
 }
 
 
@@ -80,7 +78,7 @@ def is_script(filename):
     """Determine whether ``filename`` points to a script.
 
     Args:
-        filename (unicode): Filename
+        filename (str): Filename
 
     Returns:
         bool: ``True`` if ``filename`` points to a script.
@@ -164,7 +162,7 @@ class AppScripts(object):
         try:
             scripts = self.get_scripts_for_app()
         except RuntimeError as err:
-            self.show_error(unicode(err, 'utf-8'))
+            self.show_error(str(err, 'utf-8'))
             return 1
 
         if not scripts:
@@ -256,7 +254,7 @@ class AppScripts(object):
 
     def do_userpaths(self):
         """Open user paths file in default app."""
-        cmd = [b'open', self.search_paths_file.encode('utf-8')]
+        cmd = ['open', self.search_paths_file]
         return subprocess.call(cmd)
 
     def do_toggle(self):
@@ -452,7 +450,7 @@ class AppScripts(object):
 
 
 if __name__ == '__main__':
-    wf = Workflow3(update_settings=UPDATE_SETTINGS,
+    wf = Workflow(update_settings=UPDATE_SETTINGS,
                    help_url=HELP_URL)
     log = wf.logger
     app = AppScripts()

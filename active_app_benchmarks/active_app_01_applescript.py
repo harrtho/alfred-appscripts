@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright (c) 2015 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2015 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -10,7 +11,6 @@
 
 """Get app info via AppleScript."""
 
-from __future__ import print_function, unicode_literals, absolute_import
 
 import subprocess
 import time
@@ -28,11 +28,11 @@ end tell
 
 
 def decode(s):
-    """Decode bytestring to Unicode."""
-    if isinstance(s, str):
-        s = unicode(s, 'utf-8')
-    elif not isinstance(s, unicode):
-        raise TypeError("str or unicode required, not {}".format(type(s)))
+    """Decode bytestring to str."""
+    if isinstance(s, bytes):
+        s = str(s, 'utf-8')
+    elif not isinstance(s, str):
+        raise TypeError("str or bytes required, not {}".format(type(s)))
     return unicodedata.normalize('NFC', s)
 
 
@@ -43,7 +43,7 @@ def get_frontmost_app():
     determined.
 
     """
-    cmd = [b'/usr/bin/osascript', b'-e', AS_ACTIVE_APP]
+    cmd = ['/usr/bin/osascript', '-e', AS_ACTIVE_APP]
     proc = subprocess.Popen(cmd,
                             stdout=subprocess.PIPE,
                             stderr=subprocess.PIPE)

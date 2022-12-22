@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright (c) 2015 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2015 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -10,7 +11,6 @@
 
 """Get app info by calling ActiveApp CLI program."""
 
-from __future__ import print_function, unicode_literals, absolute_import
 
 import os
 import subprocess
@@ -24,11 +24,11 @@ PROG = os.path.join(os.path.dirname(os.path.dirname(
 
 
 def decode(s):
-    """Decode bytestring to Unicode."""
-    if isinstance(s, str):
-        s = unicode(s, 'utf-8')
-    elif not isinstance(s, unicode):
-        raise TypeError("str or unicode required, not {}".format(type(s)))
+    """Decode bytestring to str."""
+    if isinstance(s, bytes):
+        s = str(s, 'utf-8')
+    elif not isinstance(s, str):
+        raise TypeError("str or bytes required, not {}".format(type(s)))
     return unicodedata.normalize('NFC', s)
 
 
