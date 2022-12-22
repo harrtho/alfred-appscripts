@@ -1,37 +1,29 @@
-
-Alfred AppScripts Workflow
-==========================
+# Alfred AppScripts Workflow
 
 List, search and run/open AppleScripts for the active application. You can also specify directories that contain scripts that will always be shown, regardless of the active application.
 
 ![][demo]
 
-
-Download
---------
+## Download
 
 **Note:** Version 3.0 and above are not compatible with Alfred 2.
 
 The workflow can be downloaded from [GitHub releases][gh-releases] or from [Packal][packal].
 
-
-Usage
------
+## Usage
 
 - `.as [<query>]` — Show/search list of AppleScripts for the active application
-	- `↩` — Run the selected script.
-	- `⌘+↩` — Open the selected script in Script Editor.
-	- `⌥+↩` — Reveal the selected script in Finder.
+  - `↩` — Run the selected script.
+  - `⌘+↩` — Open the selected script in Script Editor.
+  - `⌥+↩` — Reveal the selected script in Finder.
 - `appscripts [<query>]` — Show workflow configuration.
-    - `Help` – Open this file in your browser.
-    - `(No) Update Available` — Whether or not the workflow can be updated. Action the item to update or force an update check.
-    - `Search Directories Recursively` – Whether the script directories should be searched recursively. Use with some caution.
-    - `Edit Script Directories` — Open the configuration file in your default editor. The file contains a detailed description of how it works.
-    - `Reset to Defaults` — Delete configuration and cache files.
+  - `Help` – Open this file in your browser.
+  - `(No) Update Available` — Whether or not the workflow can be updated. Action the item to update or force an update check.
+  - `Search Directories Recursively` – Whether the script directories should be searched recursively. Use with some caution.
+  - `Edit Script Directories` — Open the configuration file in your default editor. The file contains a detailed description of how it works.
+  - `Reset to Defaults` — Delete configuration and cache files.
 
-
-Where are these scripts?
-------------------------
+## Where are these scripts?
 
 The workflow comes with a default set of directories. These are defined in a settings file that you can edit yourself. Use the `Edit Script Directories` option in the configuration (keyword `appscripts`) to open the file in your editor.
 
@@ -49,15 +41,11 @@ Any `*.scpt`, `*.applescript`, `*.scptd` (script bundle) or `*.js` (JXA) files f
 
 If you add a directory path that doesn't contain `{app_name}` or `{bundle_id}`, it will match every application and the scripts will always be shown. See the settings file (`AppScript Directories.txt`) for more information.
 
-
-Bug reports, feature requests
------------------------------
+## Bug reports, feature requests
 
 Please use [GitHub issues][gh-issues] to report bugs or request features. Alternatively, you can post in the [Alfred Forum thread][forum-thread].
 
-
-Licence, thanks
----------------
+## Licence, thanks
 
 The workflow code and the bundled [Alfred-PyWorkflow][alfred-pyworkflow] and [docopt][docopt] libraries are all licensed under the [MIT Licence][mit-licence].
 
