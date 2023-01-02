@@ -33,7 +33,7 @@ def main():
     for script in iter_scripts():
 
         name = os.path.splitext(os.path.basename(script))[0]
-        cmd = ['/usr/local/bin/python3', script]
+        cmd = ['/usr/bin/env', 'python3', script]
         times = []
         print(name)
         for i in range(ITERATIONS):

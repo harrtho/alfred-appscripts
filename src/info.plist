@@ -151,7 +151,7 @@
 				<key>runningsubtext</key>
 				<string>Loading scripts…</string>
 				<key>script</key>
-				<string>/usr/local/bin/python3 appscripts.py search "$1"</string>
+				<string>/usr/bin/env python3 appscripts.py search "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -329,7 +329,7 @@ echo "$name"</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/python3 appscripts.py config "$1"</string>
+				<string>/usr/bin/env python3 appscripts.py config "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -379,7 +379,7 @@ echo "$name"</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>/usr/local/bin/python3 appscripts.py $1</string>
+				<string>/usr/bin/env python3 appscripts.py $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -507,7 +507,7 @@ echo "$name"</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>4.0.0</string>
+	<string>4.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/harrtho/alfred-appscripts</string>
 </dict>
