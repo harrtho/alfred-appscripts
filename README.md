@@ -1,5 +1,9 @@
 # Alfred AppScripts Workflow
 
+[![GitHub Version][version-shield]][releases]
+[![GitHub All Releases][downloads-shield]][releases]
+[![GitHub][license-shield]][mit-license]
+
 List, search and run/open AppleScripts for the active application. You can also specify directories that contain scripts that will always be shown, regardless of the active application.
 
 ![][demo]
@@ -62,7 +66,10 @@ The other icons are from [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy
 [forum-thread]: http://www.alfredforum.com/topic/4218-appscripts
 [gh-issues]: https://github.com/harrtho/alfred-appscripts/issues
 [gh-releases]: https://github.com/harrtho/alfred-appscripts/releases
-[mit-licence]: http://opensource.org/licenses/MIT
 [packal]: http://www.packal.org/workflow/appscripts
 [sil-licence]: http://scripts.sil.org/OFL
 [jono]: https://www.alfredforum.com/profile/66-jono/
+[license-shield]: https://img.shields.io/github/license/harrtho/alfred-appscripts.svg
+[mit-license]: https://opensource.org/licenses/MIT
+[releases]: https://github.com/harrtho/alfred-appscripts/releases
+[version-shield]: https://img.shields.io/github/release/harrtho/alfred-appscripts.svg
