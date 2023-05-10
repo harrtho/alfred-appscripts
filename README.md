@@ -62,8 +62,9 @@ The other icons are from [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy
 [dave-gandy]: https://twitter.com/davegandy
 [demo]: https://raw.githubusercontent.com/harrtho/alfred-appscripts/master/demo.gif "Animated demonstration of AppScripts"
 [docopt]: https://github.com/docopt/docopt
-[font-awesome]: http://fortawesome.github.io/Font-Awesome/
-[forum-thread]: http://www.alfredforum.com/topic/4218-appscripts
+[downloads-shield]: https://img.shields.io/github/downloads/harrtho/alfred-appscripts/total.svg
+[font-awesome]: https://fortawesome.github.io/Font-Awesome/
+[forum-thread]: https://www.alfredforum.com/topic/4218-appscripts
 [gh-issues]: https://github.com/harrtho/alfred-appscripts/issues
 [gh-releases]: https://github.com/harrtho/alfred-appscripts/releases
 [jono]: https://www.alfredforum.com/profile/66-jono/
