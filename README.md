@@ -49,16 +49,16 @@ If you add a directory path that doesn't contain `{app_name}` or `{bundle_id}`, 
 
 Please use [GitHub issues][gh-issues] to report bugs or request features. Alternatively, you can post in the [Alfred Forum thread][forum-thread].
 
-## Licence, thanks
+## License, thanks
 
-The workflow code and the bundled [Alfred-PyWorkflow][alfred-pyworkflow] and [docopt][docopt] libraries are all licensed under the [MIT Licence][mit-licence].
+The workflow code and the bundled [Alfred-PyWorkflow][alfred-pyworkflow] and [docopt][docopt] libraries are all licensed under the [MIT License][mit-license].
 
 The workflow icon was created by [Jono Hunt][jono].
 
-The other icons are from [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy], and released under the [SIL OFL 1.1 licence][sil-licence].
+The other icons are from [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy], and released under the [SIL OFL 1.1 license][sil-license].
 
 [alfred-pyworkflow]: https://github.com/harrtho/alfred-pyworkflow
-[cc-licence]: http://creativecommons.org/licenses/by-nc/3.0/
+[cc-license]: https://creativecommons.org/licenses/by-nc/3.0/
 [dave-gandy]: https://twitter.com/davegandy
 [demo]: https://raw.githubusercontent.com/harrtho/alfred-appscripts/master/demo.gif "Animated demonstration of AppScripts"
 [docopt]: https://github.com/docopt/docopt
@@ -67,9 +67,9 @@ The other icons are from [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy
 [gh-issues]: https://github.com/harrtho/alfred-appscripts/issues
 [gh-releases]: https://github.com/harrtho/alfred-appscripts/releases
 [packal]: http://www.packal.org/workflow/appscripts
-[sil-licence]: http://scripts.sil.org/OFL
 [jono]: https://www.alfredforum.com/profile/66-jono/
 [license-shield]: https://img.shields.io/github/license/harrtho/alfred-appscripts.svg
 [mit-license]: https://opensource.org/licenses/MIT
 [releases]: https://github.com/harrtho/alfred-appscripts/releases
+[sil-license]: https://scripts.sil.org/OFL
 [version-shield]: https://img.shields.io/github/release/harrtho/alfred-appscripts.svg
