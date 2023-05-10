@@ -12,7 +12,7 @@ List, search and run/open AppleScripts for the active application. You can also 
 
 **Note:** Version 3.0 and above are not compatible with Alfred 2.
 
-The workflow can be downloaded from [GitHub releases][gh-releases] or from [Packal][packal].
+The workflow can be downloaded from [GitHub releases][gh-releases].
 
 ## Usage
 
@@ -66,7 +66,6 @@ The other icons are from [Font Awesome][font-awesome] by [Dave Gandy][dave-gandy
 [forum-thread]: http://www.alfredforum.com/topic/4218-appscripts
 [gh-issues]: https://github.com/harrtho/alfred-appscripts/issues
 [gh-releases]: https://github.com/harrtho/alfred-appscripts/releases
-[packal]: http://www.packal.org/workflow/appscripts
 [jono]: https://www.alfredforum.com/profile/66-jono/
 [license-shield]: https://img.shields.io/github/license/harrtho/alfred-appscripts.svg
 [mit-license]: https://opensource.org/licenses/MIT
