@@ -44,12 +44,11 @@ from workflow.util import run_command
 log = None
 
 HELP_URL = ('https://github.com/harrtho/alfred-appscripts'
-            '#alfred-appscripts-workflow')
+            '#appscripts-alfred-workflow')
 
 UPDATE_SETTINGS = {
     'github_slug': 'harrtho/alfred-appscripts'
 }
-
 
 DEFAULT_PATHS_FILE = os.path.join(os.path.dirname(__file__),
                                   'Script Directories.default.txt')
